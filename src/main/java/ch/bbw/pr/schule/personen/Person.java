@@ -12,6 +12,8 @@ public abstract class Person {
 	}
 
 	public String print() {return null;};
+
+	public String doWork() { return null; }
 	
 	@Override
 	public String toString() {

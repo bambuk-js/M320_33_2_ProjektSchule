@@ -12,6 +12,8 @@ public class Schulabwart extends Person {
 		return " ist Schulabwart";
 	}
 
+	public String doWork() { return repariertBeleuchtung(); }
+
 	public String repariertBeleuchtung() {
 		return "repariert die Beleuchtung";
 	}

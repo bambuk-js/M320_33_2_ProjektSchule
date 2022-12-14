@@ -12,6 +12,8 @@ public class Lehrperson extends Person {
 		return " ist Lehrperson";	
 	}
 
+	public String doWork() { return korrigiertPruefungen(); }
+
 	public String korrigiertPruefungen(){
 		return " korrigiert Pruefungen";
 	}

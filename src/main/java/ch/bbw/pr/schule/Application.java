@@ -10,7 +10,6 @@ import ch.bbw.pr.schule.personen.*;
  * @modifiedby P. Rutschmann
  */
 public class Application {
-	//Nicht veraendern
     public static void main(String[] args) {
         ArrayList<Person> personen = new ArrayList<Person>();
         personen.add(new Lernender("Bea", "Mayer"));
@@ -23,30 +22,8 @@ public class Application {
         System.out.println("Liste einiger Personen an der Schule und deren Aufgaben...\n");
         for (Person person : personen) {
             System.out.println(person.toString() + person.print());
-            System.out.println(" und " + getAufgaben(person));
+            System.out.println(" und " + person.doWork());
             System.out.println();
         }
-    }
-    
-    private static String getAufgaben(Person person) {
-    	String text=null;
-
-        if(person instanceof Lehrperson lehrperson){
-            text = lehrperson.korrigiertPruefungen();
-        }
-
-        if(person instanceof Lernender lernender){
-            text = lernender.machtHausaufgaben();
-        }
-
-        if(person instanceof Schulabwart schulabwart){
-            text = schulabwart.repariertBeleuchtung();
-        }
-
-        if(person instanceof Rektor rektor){
-            text = rektor.signiertZeugnisse();
-        }
-        
-    	return text;
     }
 }

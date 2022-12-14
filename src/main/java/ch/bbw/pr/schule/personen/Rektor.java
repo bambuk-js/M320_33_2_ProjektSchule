@@ -11,7 +11,7 @@ public class Rektor extends Person{
         return " ist Rektor(in)";
     }
 
-    public String signiertZeugnisse() {
-        return " signiert Zeugnisse";
-    }
+    public String doWork() { return signiertZeugnisse(); }
+
+    public String signiertZeugnisse() { return " signiert Zeugnisse"; }
 }

@@ -11,6 +11,8 @@ public class Lernender extends Person {
 	public String print() {
 		return " ist Lernende(r)";
 	}
+
+	public String doWork() { return machtHausaufgaben(); }
 	
 	public String machtHausaufgaben(){
 		return " macht Hausaufgaben ";
